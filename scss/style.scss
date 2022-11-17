@@ -47,14 +47,14 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid rgba(255, 253, 253, 0.5);
   justify-content: space-around;
   align-items: center;
   &_line {
     margin: 0;
     padding: 0;
     width: 25px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 253, 253, 0.5);
   }
 }
 .dropdown {
@@ -195,13 +195,13 @@
     grid-area: one;
   }
   &_2 {
+    align-self: start;
     grid-area: two;
     text-align: center;
-    margin-top: -24px;
   }
   &_3 {
+    align-self: end;
     grid-area: five;
-    margin-top: -183px;
   }
   &_4 {
     grid-area: four;
@@ -213,12 +213,12 @@
     grid-area: six;
   }
   &_7 {
+    align-self: end;
     grid-area: seven;
-    margin-top: 19px;
   }
   &_8 {
+    align-self: end;
     grid-area: eight;
-    margin-top: 19px;
   }
 }
 .second_img {
@@ -356,7 +356,10 @@
   display: grid;
   grid-area: ". funi funi_text";
 }
-
+.four_rows_main_funi_img {
+  width: 100%;
+  height: 100%;
+}
 .four_rows_main_funi {
   margin-top: 62px;
   margin-left: 84px;
@@ -368,7 +371,6 @@
   grid-area: funi_text;
   display: flex;
   flex-direction: column;
-  margin-top: -77px;
 }
 .four_rows_main_text_area {
   @include header;
@@ -736,6 +738,38 @@
     padding: 12px 53px;
   }
 }
+@media (max-width: 912px) {
+  .seven_rows__inner-grid1 {
+    font-size: 16px;
+  }
+  .seven_rows__inner-grid2 {
+    font-size: 16px;
+  }
+  .seven_rows__inner-grid3 {
+    font-size: 16px;
+  }
+  .seven_rows__inner-grid4 {
+    font-size: 16px;
+  }
+  .four_rows_main_text_foot {
+    margin-left: 318px;
+  }
+  .lines_line2 {
+    top: 46rem;
+  }
+  .menu_li_a {
+    font-size: 17px;
+  }
+  .text_left {
+    font-size: 59px;
+  }
+  .text_right {
+    font-size: 19px;
+  }
+  .text_right .isa {
+    padding-left: 7rem;
+  }
+}
 
 @media (max-width: 820px) {
   .logo {
@@ -806,7 +840,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 715px) {
   .citrus {
     display: flex;
 
@@ -861,10 +895,10 @@
     font-size: 10px;
   }
   .logo {
-    font-size: 21px;
+    font-size: 17px;
   }
   .logo_right {
-    font-size: 14px;
+    font-size: 11px;
   }
   .second_row_main {
     column-gap: 4px;
@@ -997,5 +1031,30 @@
   }
   .text_right .isa {
     padding-left: 9rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .text_right .isa {
+    padding-left: 4rem;
+  }
+  .text_right {
+    font-size: 7px;
+  }
+  .text_left {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .logo {
+    font-size: 13px;
+  }
+  .logo_right {
+    font-size: 8px;
+  }
+  .lines_line {
+    top: 22rem;
+  }
+  .lines_line2 {
+    top: 36rem;
   }
 }
